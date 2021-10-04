@@ -50,7 +50,7 @@ export default function Addresult(){
        <div className='appointment-container'>
            <div className='title'> ADD LAB DETAILS</div>    
            <div className='container'>
-           <form onSubmit={sendData}><form action='#'>
+           <form onSubmit={sendData}>
                 <div className='user-details'>
                 <div className='input-box'>
                         <label className='details' htmlFor='test_result_ID'>Test Result ID</label>
@@ -215,7 +215,7 @@ export default function Addresult(){
                     <input type='submit' class="btn btn-outline-primary"value='CREATE'/>
                     <input type='reset' class="btn btn-outline-primary"value='CANCEL'/>
                 </div>
-           </form></form>
+           </form>
            </div>
         </div>
        </div>
