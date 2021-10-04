@@ -59,7 +59,7 @@ export default function Addresult(){
                             settest_result_ID(e.target.value)
                         }}/>
                         <i className='fa fa-envelope left-icon'/>
-                        <i className='fa fa-times right-icon'/>
+                        <i className='fa fa-times right-icon'/> <i className='fa fa-id-card-o left-icon'/>
                         </div>
                     </div>
                     <div className='input-box'>
