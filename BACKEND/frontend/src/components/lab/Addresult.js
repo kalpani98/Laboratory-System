@@ -1,8 +1,6 @@
 import React,{useState} from "react";
 import axios from "axios";
 
-import {AddresultValidaten} from '../loginform/Validate';
-
 
 export default function Addresult(){
     const [test_result_ID,settest_result_ID] = useState("");
@@ -105,7 +103,6 @@ export default function Addresult(){
                         <i className='fa fa-envelope left-icon'/>
                         <i className='fa fa-times right-icon'/>
                         </div>
-                        {errors.name && <p className='error'>{errors.rname}</p>}
                     </div>
                     <div className='input-box'>
                         <label className='details' htmlFor='testDate'>Test Date</label>
