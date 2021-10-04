@@ -95,9 +95,9 @@ export default function Addresult(){
                         </div>
                     </div>
                     <div className='input-box'>
-                        <label className='details' htmlFor='fullName'>Name</label>
+                        <label className='details' htmlFor='name'>Name</label>
                         <div className='input-group'>
-                        <input type='text' id='fullName' name='fullName' placeholder='Enter Your Name' onChange={(e)=>{
+                        <input type='text' id='name' name='name' placeholder='Enter Your Name' onChange={(e)=>{
                             setName(e.target.value)
                         }}/>
                         <i className='fa fa-envelope left-icon'/>
