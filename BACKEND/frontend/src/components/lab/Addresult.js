@@ -95,7 +95,7 @@ export default function Addresult(){
                         </div>
                     </div>
                     <div className='input-box'>
-                        <label className='details' htmlFor='name'>Name</label>
+                        <label className='details' htmlFor='fullname'>Name</label>
                         <div className='input-group'>
                         <input type='text' id='fullname' name='fullname' placeholder='Enter Your Name' onChange={(e)=>{
                             setName(e.target.value)
