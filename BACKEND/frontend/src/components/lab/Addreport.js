@@ -49,7 +49,7 @@ export default function Addresult(){
                 <div className='input-box'>
                         <label className='details' htmlFor='name'>Name</label>
                         <div className='input-group'>
-                        <input type='text' id='name' name='name' placeholder='Enter Your Name' onChange={(e)=>{
+                        <input type='text' id='name' name='name' placeholder='Enter Your Name' required  onChange={(e)=>{
                             setName(e.target.value)
                         }}/>
                         <i className='fa fa-envelope left-icon'/>
@@ -81,7 +81,7 @@ export default function Addresult(){
                      <div className='input-box'>
                         <label className='details' htmlFor='patientId'>Patient ID</label>
                         <div className='input-group'>
-                        <input type='text' id='patientId' name='patientId' placeholder='Enter Your Patient ID' onChange={(e)=>{
+                        <input type='text' id='patientId' name='patientId' placeholder='Enter Your Patient ID' required onChange={(e)=>{
                             setpatientId(e.target.value)
                         }}/>
                         <i className='fa fa-envelope left-icon'/>
@@ -102,7 +102,7 @@ export default function Addresult(){
                          
                          <div className='input-box'>
                         <label className='details' htmlFor='amount'>Amount</label>
-                        <input type='text' id='amount' name='amount' placeholder='Enter Amount' onChange={(e)=>{
+                        <input type='text' id='amount' name='amount' placeholder='Enter Amount' required  onChange={(e)=>{
                             setAmount(e.target.value)
                         }}/>
                         <i className='fa fa-list left-icon'/>

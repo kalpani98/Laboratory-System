@@ -66,7 +66,7 @@ export default function Addresult(){
                     <div className='input-box'>
                         <label className='details' htmlFor='testID'>Test ID</label>
                         <div className='input-group'>
-                        <select id='testID' name='testID'required 
+                        <select id='testID' name='testID' 
                         onChange={(e)=>{
                             settestID(e.target.value);
                     }}>
@@ -200,7 +200,7 @@ export default function Addresult(){
                     <div className='input-box'>
                         <label className='remark' htmlFor='remark'>Remark</label>
                         <div className='input-group'>
-                        <select id='remark' name='remark' required 
+                        <select id='remark' name='remark' 
                         onChange={(e)=>{
                             setRemark(e.target.value)
                     }}>
