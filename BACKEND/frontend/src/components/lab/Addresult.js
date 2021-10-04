@@ -55,7 +55,8 @@ export default function Addresult(){
                 <div className='input-box'>
                         <label className='details' htmlFor='test_result_ID'>Test Result ID</label>
                         <div className='input-group'>
-                        <input type='text' id='test_result_ID' name='test_result_ID' placeholder='Enter Your Test Result ID' onChange={(e)=>{
+                        <input type='text' id='test_result_ID' name='test_result_ID' placeholder='Enter Your Test Result ID' required 
+                        onChange={(e)=>{
                             settest_result_ID(e.target.value)
                         }}/>
                         <i className='fa fa-envelope left-icon'/>
