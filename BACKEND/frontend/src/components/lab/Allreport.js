@@ -51,6 +51,59 @@ export default function Allreport(){
     getLab();
     }, [])
 
+// genarate pdf
+
+
+
+const generatePDF = tickets => {
+
+
+
+    const doc = new jspdf();
+
+    const tableColumn = ["Name","Test ID","Patient ID"  , "Test Date",
+
+        "Amount", "Test Type", "Component", "Unit"];
+
+    const tableRows = [];
+
+    const date = Date().split(" ");
+
+    const dateStr = date[1] + "-" + date[2] + "-" + date[3];
+
+
+
+    tickets.map(ticket => {
+
+        const ticketData = [
+              
+            ticket.name,
+
+            ticket.testID,
+
+            ticket.patientId,
+
+            ticket. testDate,
+
+            ticket.amount,
+
+            ticket.testType,
+
+            ticket.component,
+
+            ticket. unit,
+
+        ];
+
+        tableRows.push(ticketData);
+    })
+    doc.text("Hospital Management System", 70, 8).setFontSize(13);
+    doc.text("LabDetails Report", 14, 16).setFontSize(13);
+    doc.text(`Report Genarated Date - ${dateStr}`, 14, 23);
+    doc.autoTable(tableColumn, tableRows, { styles: { fontSize: 8, }, startY: 35 });
+    doc.save("Lab Details Report.pdf");
+};
+
     return (
         <>
          <div class="head">
