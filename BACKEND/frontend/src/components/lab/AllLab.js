@@ -110,7 +110,7 @@ export default function AllLab() {
         doc.text("LabDetails Report", 14, 16).setFontSize(13);
         doc.text(`Report Genarated Date - ${dateStr}`, 14, 23);
         doc.autoTable(tableColumn, tableRows, { styles: { fontSize: 8, }, startY: 35 });
-        doc.save("Lab Details Report.pdf");
+        doc.save("Lab Result Details .pdf");
     };
 
 
