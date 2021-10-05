@@ -223,13 +223,11 @@ export default function EditForm() {
                                 </div>
                             </div>
         
-                            {/* werhlwerwkejhrlwhkwlerlwrkrlwerlrkrlwerlwejrl */}
                     
                        
                         </div>     
                         <div className='button'>
                         <button type="update" class="btn btn-primary" onClick={(e)=>{sendData(e)}}>Update</button>
-                            <input type='reset' class="btn btn-outline-primary"value='CANCEL'/>
                         </div>
                    </form>
                    </div>
