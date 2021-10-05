@@ -90,8 +90,7 @@ router.route("/delete/:id").delete(async(req,res)=> {
 router.route("/get/:id").get(async(req,res)=> {
     let userId = req.params.id;
 
-    const report = await report.findById(userId)
-    .then((report)=> {
+    const repor = await report.findById(userId).then((report)=> {
         res.status(200).send({status:"Lab Details fetched",report})
     }).catch((err)=> {
         console.log(err.message);

@@ -100,10 +100,10 @@ router.route("/delete/:testID").delete(async(req,res)=> {
 })
 
 //retrieve one
-router.route("/get/:testID").get(async(req,res)=> {
-    let userId = req.params.testID;
+router.route("/get/:id").get(async(req,res)=> {
+    let userId = req.params.id;
 
-    const Lab_result = await Lab_result.findOne(userId)
+    const Lab_result = await Lab_result.findById(userId)
     .then((Lab_result)=> {
         res.status(200).send({status:"Lab Details fetched",Lab_result})
     }).catch(()=> {
@@ -111,5 +111,7 @@ router.route("/get/:testID").get(async(req,res)=> {
         res.status(500).send({status:"Error with get user", error:err.message});
     })
 })
+
+
 
 module.exports = router;
