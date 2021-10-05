@@ -1,5 +1,4 @@
 const router = require("express").Router();
-//let Bill = require("../models/bill");
 let report = require("../models/report");
 //Lab_result
 
@@ -91,12 +90,14 @@ router.route("/delete/:id").delete(async(req,res)=> {
 router.route("/get/:id").get(async(req,res)=> {
     let userId = req.params.id;
 
-    const report = await report.findById(userId)
-    .then((report)=> {
-        res.status(200).send({status:"Lab Details fetched",report})
+    const Report = await report.findById(userId)
+    .then((Report)=> {
+        res.status(200).send({status:"Lab Details fetched",Report})
     }).catch((err)=> {
         console.log(err.message);
         res.status(500).send({status:"Error with get user", error:err.message});
+
+        
     })
 })
 

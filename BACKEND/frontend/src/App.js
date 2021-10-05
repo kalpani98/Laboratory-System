@@ -44,7 +44,7 @@ function App() {
          <Route path="/lab" exact component={LAB}></Route>
          <Route path="/reCrud" exact component={ReportCRUD}></Route>
          <Route path="/redisplay" exact component={Allreport}></Route>
-         <Route path="/update" exact component={EditForm}></Route>
+         <Route path="/update/:id" exact component={EditForm}></Route>
 
 
           <Route path='/make-appointment' exact component={MakeAppointment}></Route>

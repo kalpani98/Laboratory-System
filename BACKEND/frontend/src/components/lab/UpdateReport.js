@@ -112,7 +112,7 @@ export default function EditForm() {
                                 <div className='input-group'>
                                 <input type='text' id='name' name='name' placeholder='Enter Your Name' required  onChange={(e)=>{
                                     setName(e.target.value)
-                                }}/>
+                                }} value ={name}/>
                                 <i className='fa fa-envelope left-icon'/>
                                 <i className='fa fa-times right-icon'/>
                                 </div>
@@ -123,7 +123,7 @@ export default function EditForm() {
                                 <select id='testID' name='testID'
                                 onChange={(e)=>{
                                     settestID(e.target.value);
-                            }}>
+                            }}value ={testID}>
                                     <option value='Select'>Select Your test ID</option>
                                     <option value='T_101'>T_101</option>
                                     <option value='T_102'>T_102</option>
@@ -144,7 +144,7 @@ export default function EditForm() {
                                 <div className='input-group'>
                                 <input type='text' id='patientId' name='patientId' placeholder='Enter Your Patient ID' required onChange={(e)=>{
                                     setpatientId(e.target.value)
-                                }}/>
+                                }}value ={patientId}/>
                                 <i className='fa fa-envelope left-icon'/>
                                 <i className='fa fa-times right-icon'/>
                                 </div>
@@ -153,10 +153,10 @@ export default function EditForm() {
                                  <div className='input-box'>
                                 <label className='details' htmlFor='testDate'>Test Date</label>
                                 <div className='input-group'>
-                                <input type='date' id='date' name='date' required
+                                <input type='date' id='testDate' name='date' required
                                onChange={(e)=>{
                                 settestDate(e.target.value);
-                        }}/>
+                        }}value ={testDate}/>
                                 </div>
                             </div>
                                  
@@ -165,7 +165,7 @@ export default function EditForm() {
                                 <label className='details' htmlFor='amount'>Amount</label>
                                 <input type='text' id='amount' name='amount' placeholder='Enter Amount' required  onChange={(e)=>{
                                     setAmount(e.target.value)
-                                }}/>
+                                }}value ={amount}/>
                                 <i className='fa fa-list left-icon'/>
                                 <i className='fa fa-times right-icon'/>
                             </div>
@@ -175,7 +175,7 @@ export default function EditForm() {
                                 <select id='testType' name='testType'
                                 onChange={(e)=>{
                                     settestType(e.target.value);
-                            }}>
+                            }}value ={testType}>
                                     <option value='Select'>Select Your test type</option>
                                     <option value='Blood Count'>Blood Count</option>
                                     <option value='Urinalysis'>Urinalysis</option>
@@ -191,7 +191,7 @@ export default function EditForm() {
                                 <select id='component' name='component'
                                 onChange={(e)=>{
                                     setcomponent(e.target.value);
-                            }}>
+                            }}value ={component}>
                                     <option value='Select'>Select Your Component</option>
                                     <option value='Blood'>Blood</option>
                                     <option value='Urin'>Urine</option>
@@ -207,7 +207,7 @@ export default function EditForm() {
                                 <select id='unit' name='unit'
                                 onChange={(e)=>{
                                     setUnit(e.target.value)
-                            }}>
+                            }}value ={unit}>
                                     <option value='SelectC'>Select Unit</option>
                                     <option value='OPD'>OPD</option>
                                     <option value='Breast '>Breast screening</option>
