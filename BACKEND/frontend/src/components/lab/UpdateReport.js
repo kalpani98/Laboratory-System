@@ -26,7 +26,7 @@ export default function EditForm() {
 
         async function getData(){
   
-              const result = await axios.get(`http://localhost:8050/bill/get/${id}`)
+              const result = await axios.get(`http://localhost:8050/report/get/${id}`)
   
   
   
@@ -79,11 +79,11 @@ export default function EditForm() {
               unit
           }
 
-        axios.put(`http://localhost:8000/bill/update/${id}`,  newResult).then(() => {
+        axios.put(`http://localhost:8050/report/update/${id}`,  newResult).then(() => {
 
             alert("Lab Report Updated")
 
-            window.location = "/BillCRUD"
+            window.location = "/lab"
 
 
 
