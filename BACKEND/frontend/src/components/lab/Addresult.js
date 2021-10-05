@@ -156,9 +156,9 @@ export default function Addresult(){
                         </div>
                     </div>
                  <div className='input-box'>
-                        <label className='details' htmlFor='quantity'>Blood Group</label>
+                        <label className='details' htmlFor='Blood_Group'>Blood Group</label>
                         <div className='input-group'>
-                        <select id='quantity' name='quantity' required 
+                        <select id='Blood_Group' name='Blood_Group' required 
                         onChange={(e)=>{
                             setquantity(e.target.value);
                     }}>

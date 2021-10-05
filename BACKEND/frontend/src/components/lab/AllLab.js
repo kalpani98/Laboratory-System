@@ -90,7 +90,7 @@ export default function AllLab(){
                         <th>Amount</th>
                         <th>Test Type</th>
                         <th>Component</th>
-                        <th>Quantity</th>
+                        <th>Blood Group</th>
                         <th>Unit</th>
                         <th>Remark</th>
                          

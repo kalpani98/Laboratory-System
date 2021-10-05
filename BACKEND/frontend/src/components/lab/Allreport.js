@@ -127,12 +127,8 @@ export default function Allreport(){
                
          <DeleteIcon fontSize="small" />
        </IconButton></td>
-
-       <td > <IconButton aria-label="delete"  >
-                                       
-               
-                                       <EditIcon fontSize="small" />
-                                     </IconButton></td>
+       <td><a className="btn btn-warning" href={'update/' + (f._id)}>Edit
+<i className="far fa-edit"></i>&nbsp;</a></td>
 
                                </tr>
 

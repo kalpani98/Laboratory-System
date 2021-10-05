@@ -13,6 +13,7 @@ import Addreport from './components/lab/Addreport';
 import LAB from './components/lab/LAB';
 import ReportCRUD from './components/lab/ReportCRUD';
 import Allreport from './components/lab/Allreport';
+import EditForm from './components/lab/UpdateReport';
 //import Book from './components/lab/Book';
 
 //Main Component
@@ -43,6 +44,7 @@ function App() {
          <Route path="/lab" exact component={LAB}></Route>
          <Route path="/reCrud" exact component={ReportCRUD}></Route>
          <Route path="/redisplay" exact component={Allreport}></Route>
+         <Route path="/update" exact component={EditForm}></Route>
 
 
           <Route path='/make-appointment' exact component={MakeAppointment}></Route>

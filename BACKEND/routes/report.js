@@ -44,8 +44,8 @@ router.route("/display").get((req,res) =>{
 })
 
 //Update data
-router.route("/update/:testID").put(async(req,res)=> {
-    let userId = req.params.testID;
+router.route("/update/:id").put(async(req,res)=> {
+    let userId = req.params.id;
     const {      name,
       testID,
       patientId,
@@ -65,7 +65,7 @@ router.route("/update/:testID").put(async(req,res)=> {
         component,
         unit
     }
-    const update = await report.findOneAndUpdate(userId,updatereport)
+    const update = await report.findByIdAndUpdate(userId,updatereport)
     .then(()=> {
         res.status(200).send({status:"Lab report updated"})
     }).catch((err) =>{
@@ -75,10 +75,10 @@ router.route("/update/:testID").put(async(req,res)=> {
 })
 
 //delete data
-router.route("/delete/:testID").delete(async(req,res)=> {
-    let userId = req.params.testID;
+router.route("/delete/:id").delete(async(req,res)=> {
+    let userId = req.params.id;
 
-    await report.findOneAndDelete(userId)
+    await report.findByIdAndDelete(userId)
     .then(()=> {
         res.status(200).send({status:"Lab report Deleted!"});
     }).catch((errr) =>{
@@ -88,16 +88,18 @@ router.route("/delete/:testID").delete(async(req,res)=> {
 })
 
 //retrieve one
-router.route("/get/:testID").get(async(req,res)=> {
-    let userId = req.params.testID;
+router.route("/get/:id").get(async(req,res)=> {
+    let userId = req.params.id;
 
-    const report = await report.findOne(userId)
+    const report = await report.findById(userId)
     .then((report)=> {
         res.status(200).send({status:"Lab Details fetched",report})
-    }).catch(()=> {
+    }).catch((err)=> {
         console.log(err.message);
         res.status(500).send({status:"Error with get user", error:err.message});
     })
 })
+
+
 
 module.exports = router;
