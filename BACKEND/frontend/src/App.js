@@ -14,6 +14,7 @@ import LAB from './components/lab/LAB';
 import ReportCRUD from './components/lab/ReportCRUD';
 import Allreport from './components/lab/Allreport';
 import EditForm from './components/lab/UpdateReport';
+import UpdateResult from './components/lab/UpdateResult';
 //import Book from './components/lab/Book';
 
 //Main Component
@@ -45,7 +46,7 @@ function App() {
          <Route path="/reCrud" exact component={ReportCRUD}></Route>
          <Route path="/redisplay" exact component={Allreport}></Route>
          <Route path="/update/:id" exact component={EditForm}></Route>
-
+          <Route path="/updates/:id" exact component={UpdateResult}></Route>
 
           <Route path='/make-appointment' exact component={MakeAppointment}></Route>
           <Route path='/booking-history' exact component={BookingHistory}></Route>
