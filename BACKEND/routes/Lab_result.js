@@ -103,10 +103,10 @@ router.route("/delete/:id").delete(async(req,res)=> {
 router.route("/get/:id").get(async(req,res)=> {
     let userId = req.params.id;
 
-    const Lab_result = await Lab_result.findById(userId)
+    const Labresult = await Lab_result.findById(userId)
     .then((Lab_result)=> {
         res.status(200).send({status:"Lab Details fetched",Lab_result})
-    }).catch(()=> {
+    }).catch((err)=> {
         console.log(err.message);
         res.status(500).send({status:"Error with get user", error:err.message});
     })

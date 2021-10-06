@@ -43,7 +43,7 @@ export default function Allreport(){
     useEffect(() => {
         //fetching all supplier data from the database
         function getLab(){
-        axios.get("http://localhost:8050/post/display").then((res) => {
+        axios.get("http://localhost:8050/report/display").then((res) => {
             setLab(res.data);
             }
         ).catch((err) => {

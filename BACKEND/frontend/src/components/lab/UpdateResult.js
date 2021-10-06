@@ -94,7 +94,7 @@ export default function UpdateResult() {
 
             alert("Lab Result Updated")
 
-            window.location = "/lab"
+            //window.location = "/lab"
 
 
 

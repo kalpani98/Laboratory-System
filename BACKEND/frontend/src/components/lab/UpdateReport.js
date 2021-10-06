@@ -85,7 +85,7 @@ export default function EditForm() {
 
             alert("Lab Report Updated")
 
-            window.location = "/lab"
+           // window.location = "/lab"
 
 
 
