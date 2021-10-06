@@ -65,7 +65,7 @@ export default function AllLab() {
 
         const tableColumn = ["Test Result ID", "Test ID", "Patient ID", "Name", "Test Date",
 
-            "Amount", "Test Type", "Component", "Quantity", "Unit", "Remarkr"];
+            "Amount", "Test Type", "Component", "Blood Group", "Unit", "Remarkr"];
 
         const tableRows = [];
 
