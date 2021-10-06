@@ -22,6 +22,8 @@ export default function EditForm() {
     const [testType,settestType] = useState("");
     const [component,setcomponent] = useState("");
     const [unit,setUnit] = useState("");
+
+
     useEffect(() => {
 
         async function getData(){
@@ -30,13 +32,13 @@ export default function EditForm() {
   
   
   
-              let billData = result.data.bill
+              let billData = result.data.report
   
               if (billData) {
   
-                settestID(billData.testID);
-  
                 setName(billData.name);
+
+                settestID(billData.testID);
   
                 setpatientId(billData.patientId);
   
@@ -110,9 +112,9 @@ export default function EditForm() {
                         <div className='input-box'>
                                 <label className='details' htmlFor='name'>Name</label>
                                 <div className='input-group'>
-                                <input type='text' id='name' name='name' placeholder='Enter Your Name' required  onChange={(e)=>{
+                                <input type='text' id='name' name='name' placeholder='Enter Your Name' value ={name} required  onChange={(e)=>{
                                     setName(e.target.value)
-                                }} value ={name}/>
+                                }}/>
                                 <i className='fa fa-envelope left-icon'/>
                                 <i className='fa fa-times right-icon'/>
                                 </div>
