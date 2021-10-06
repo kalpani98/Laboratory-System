@@ -16,8 +16,8 @@ export default function UpdateResult() {
     const [test_result_ID,settest_result_ID] = useState("");
     const [testID,settestID] = useState("");
     const [patientId,setpatientId] = useState("");
-    const [ name,setName] = useState("");
-    const [ testDate,settestDate] = useState("");
+    const [name,setName] = useState("");
+    const [testDate,settestDate] = useState("");
     const [amount,setAmount] = useState("");  
     const [testType,settestType] = useState("");
     const [component,setcomponent] = useState("");
