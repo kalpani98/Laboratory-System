@@ -49,8 +49,8 @@ router.route("/display").get((req,res) =>{
 })
 
 //Update data
-router.route("/update/:testID").put(async(req,res)=> {
-    let userId = req.params.testID;
+router.route("/update/:id").put(async(req,res)=> {
+    let userId = req.params.id;
     const { 
         test_result_ID,
         testID,
@@ -77,7 +77,7 @@ router.route("/update/:testID").put(async(req,res)=> {
         unit,
         remark
     }
-    const update = await Lab_result.findOneAndUpdate(userId,updateLab_result)
+    const update = await Lab_result.findByIdAndUpdate(userId,updateLab_result)
     .then(()=> {
         res.status(200).send({status:"Lab Result updated"})
     }).catch((err) =>{
@@ -87,10 +87,10 @@ router.route("/update/:testID").put(async(req,res)=> {
 })
 
 //delete data
-router.route("/delete/:testID").delete(async(req,res)=> {
-    let userId = req.params.testID;
+router.route("/delete/:id").delete(async(req,res)=> {
+    let userId = req.params.id;
 
-    await Lab_result.findOneAndDelete(userId)
+    await Lab_result.findByIdAndDelete(userId)
     .then(()=> {
         res.status(200).send({status:"Lab details Deleted!"});
     }).catch((errr) =>{

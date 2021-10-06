@@ -32,25 +32,25 @@ export default function EditForm() {
   
   
   
-              let billData = result.data.report
+              let reportData = result.data.report
   
-              if (billData) {
+              if (reportData) {
   
-                setName(billData.name);
+                setName(reportData.name);
 
-                settestID(billData.testID);
+                settestID(reportData.testID);
   
-                setpatientId(billData.patientId);
+                setpatientId(reportData.patientId);
   
-                settestDate(billData.testDate);
+                settestDate(reportData.testDate);
   
-                setAmount(billData.amount);
+                setAmount(reportData.amount);
   
-                settestType(billData.testType);
+                settestType(reportData.testType);
   
-                setcomponent(billData.component);
+                setcomponent(reportData.component);
   
-                setUnit(billData.unit);
+                setUnit(reportData.unit);
 
   
               } else {

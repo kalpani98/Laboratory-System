@@ -124,7 +124,7 @@ export default function UpdateResult() {
                                 <input type='text' id='test_result_ID' name='test_result_ID' placeholder='Enter Your Test Result ID' required 
                                 onChange={(e)=>{
                                     settest_result_ID(e.target.value)
-                                }}/>
+                                }}value ={test_result_ID}/>
                                 <i className='fa fa-envelope left-icon'/>
                                 <i className='fa fa-times right-icon'/>
                                 </div>
@@ -157,7 +157,7 @@ export default function UpdateResult() {
                                 <input type='text' id='patientId' name='patientId' placeholder='Enter Your Patient ID' required  
                                 onChange={(e)=>{
                                     setpatientId(e.target.value)
-                                }}/>
+                                }}value={patientId}/>
                                 <i className='fa fa-envelope left-icon'/>
                                 <i className='fa fa-times right-icon'/>
                                 </div>
@@ -168,7 +168,7 @@ export default function UpdateResult() {
                                 <input type='text' id='name' name='name' placeholder='Enter Your Name' required 
                                 onChange={(e)=>{
                                     setName(e.target.value)
-                                }}/>
+                                }}value={name}/>
                                 <i className='fa fa-envelope left-icon'/>
                                 <i className='fa fa-times right-icon'/>
                                 </div>
@@ -179,14 +179,14 @@ export default function UpdateResult() {
                                 <input type='date' id='date' name='date' required
                                onChange={(e)=>{
                                 settestDate(e.target.value);
-                        }}/>
+                        }}value={testDate}/>
                                 </div>
                             </div>   
                                 <div className='input-box'>
                                 <label className='details' htmlFor='amount'>Amount</label>
                                 <input type='text' id='amount' name='amount' placeholder='Enter Amount' required onChange={(e)=>{
                                     setAmount(e.target.value)
-                                }}/>
+                                }}value={amount}/>
                                 <i className='fa fa-list left-icon'/>
                                 <i className='fa fa-times right-icon'/>
                             </div>
@@ -201,7 +201,7 @@ export default function UpdateResult() {
                                     <option value='Blood Count'>Blood Count</option>
                                     <option value='Urinalysis'>Urinalysis</option>
                                     <option value='Scan'>Scan</option>
-                                </select>
+                                </select>value={testType}
                                 <i className='fa fa-list left-icon'/>
                                 </div>
                             </div>
@@ -217,7 +217,7 @@ export default function UpdateResult() {
                                     <option value='Blood'>Blood</option>
                                     <option value='Urin'>Urine</option>
                                     
-                                </select>
+                                </select>value={component}
                                 <i className='fa fa-list left-icon'/>
                                 </div>
                             </div>
@@ -235,7 +235,7 @@ export default function UpdateResult() {
                                     <option value='B'>B</option>
                                     <option value='B+'>B+</option>
                                     
-                                </select>
+                                </select>value={quantity}
                                 <i className='fa fa-list left-icon'/>
                                 </div>
                             </div>
@@ -257,7 +257,7 @@ export default function UpdateResult() {
                                     <option value='Physiotheraphy'>Physiotheraphy</option>
                                     <option value='Anesthetics'>Anesthetics</option>
                                     
-                                </select>
+                                </select>value={unit}
                                 <i className='fa fa-list left-icon'/>
                                 </div>
                             </div>
@@ -274,7 +274,7 @@ export default function UpdateResult() {
                                     <option value='Yes'>Yes</option>
                                     <option value='No'>No</option>
                                     
-                                </select>
+                                </select>value={remark}
                                 <i className='fa fa-list left-icon'/>
                                 </div>
                             </div>
