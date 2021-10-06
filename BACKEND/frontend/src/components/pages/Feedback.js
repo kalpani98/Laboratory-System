@@ -7,8 +7,8 @@ export default function Feedback() {
                 <div className='title'>Feedback</div>
                 <div className='container feed'>
                     <div>
-                        <h3>Hello</h3>
-                        <p>Hey</p>
+                        <h3>Welcom to Lab Page</h3>
+                        <p>You can send email to us</p>
                     </div>
                 </div>
             </div>

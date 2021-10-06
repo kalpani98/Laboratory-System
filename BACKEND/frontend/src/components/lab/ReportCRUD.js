@@ -13,7 +13,7 @@ export default function ReportCRUD() {
         <div className='card-group-1'>
             <LabCard imgURL={img1} title='make a Lab report' text={"Don't Make a Wish\nMake an\nAppointment"} URLpath={"/report"}/>
             <LabCard imgURL={img2} title='Laboratory Report list' text={"Once You've Opened it,\nYou've Opened up\nyour mind"} URLpath={"redisplay"}/>
-            <LabCard imgURL={img3} title='Lab Details feedback' text={"There is always space for improvement\nno matter how long\nit takes"} URLpath={"/report"}/>
+            <LabCard imgURL={img3} title='Lab Details feedback' text={"There is always space for improvement\nno matter how long\nit takes"} URLpath={"/feedback"}/>
         </div>
         </>
     )

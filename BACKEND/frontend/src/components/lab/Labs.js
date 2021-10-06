@@ -13,7 +13,7 @@ export default function Labs() {
         <div className='card-group-1'>
             <LabCard imgURL={img1} title='Make Lab result' text={"Don't Make a Wish\nMake an\nAppointment"} URLpath={"/add"}/>
             <LabCard imgURL={img2} title='All lab result details' text={"Once You've Opened it,\nYou've Opened up\nyour mind"} URLpath={"/display"}/>
-            <LabCard imgURL={img3} title='Lab result Details feedback' text={"There is always space for improvement\nno matter how long\nit takes"} URLpath={"#"}/>
+            <LabCard imgURL={img3} title='Lab result Details feedback' text={"There is always space for improvement\nno matter how long\nit takes"} URLpath={"/feedback"}/>
         </div>
         </>
     )
